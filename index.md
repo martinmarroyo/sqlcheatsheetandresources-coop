@@ -43,7 +43,7 @@ OFFSET 5;
 This is the general order of clauses for most basic SQL queries. Please note that there are other advanced clauses which are not covered here.
 1. `SELECT`
 2. `FROM`
-3. `JOIN`(INNER, LEFT, OUTER, CROSS)*
+3. `JOIN`*
 4. `WHERE`*
 5. `GROUP BY`*
 6. `HAVING`*
@@ -56,15 +56,17 @@ This is the general order of clauses for most basic SQL queries. Please note tha
 [back to top](#top)
 
 ## Operators <a name="operator"></a>
+
 ##### Comparison Operators
-**Equal to**: `=`
-**Not equal to**: `<>` or `!=`
-**Greater than**: `>`
-**Less than**: `<`
-**Greater than or equal to**: `>=`
-**Less than or equal to**:  `<=`
-**Match zero to many characters (for `LIKE` clause):** `%`
-**Match any single character (for `LIKE` clause):** `_`
+- **Equal to**: `=`
+- **Not equal to**: `<>` or `!=`
+- **Greater than**: `>`
+- **Less than**: `<`
+- **Greater than or equal to**: `>=`
+- **Less than or equal to**:  `<=`
+- **Match zero to many characters (for `LIKE` clause):** `%`
+- **Match any single character (for `LIKE` clause):** `_`
+
 ##### Logical Operators
 - `AND` - Checks that two or more conditions are ALL true (e.g. `condition1 AND condition2`)
 - `OR` - Checks if any of two or more conditions are true (e.g. `condition1 OR condition2`)
@@ -283,5 +285,6 @@ The `_` operator is also a wildcard operator, just like `%`. The only difference
 - [Codecademy - Free Learn SQL Course](https://www.codecademy.com/learn/learn-sql): Codecademy is another great resource to learn SQL as well as most other languages. There are a lot of free resources here that can help you learn SQL, Python, R, and many other languages.
 - [Socratica SQL (YouTube)](https://www.youtube.com/watch?v=nWyyDHhTxYU&list=PLih4ch-U2DiBbMoFK4ML9faT3k3MM2UQY): This is a great playlist that will get you started learning SQL with one of the most popular relational databases - Postgres.
 - [DB Fiddle](https://dbfiddle.uk/): This site is like a SQL scratch pad. You can use it to practice doing stuff like creating tables and inserting data into them, and all sorts of other stuff that you might not be able to do so freely in a live database. It's a sandbox, basically. Here are a couple of links to fiddles with some data in them to play with: [fiddle 1](https://dbfiddle.uk/?rdbms=postgres_13&fiddle=366b683701596d3f7459b0411c15acd1) and [fiddle 2](https://dbfiddle.uk/?rdbms=postgres_13&fiddle=dfffc1939f629d9286c55d732fb656c5). 
+- [Kaggle](https://www.kaggle.com/): Kaggle is the place for data analysis and data science. There are tons of free data sets to try out and even some good, free courses on SQL and Python. 
 
 [back to top](#top)
