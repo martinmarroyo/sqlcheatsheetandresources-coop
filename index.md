@@ -92,7 +92,7 @@ This is the general order of clauses for most basic SQL queries. Please note tha
 
 ## Working with Aggregate Functions <a name="aggregates"></a>
 #### Clauses to know:
-- `GROUP BY`: Allows you to aggregate data in by a single value or group of values.
+- `GROUP BY`: Allows you to aggregate (or summarize) data by a single value or group of values.
 - `HAVING`: Allows you to filter your query using the value of an aggregate function. Think of this as a `WHERE` clause for aggregate functions.
 #### Common aggregate functions:
 - `COUNT(column)`: Counts how many rows are in a particular column (or table if you use '*' - e.g. `COUNT(*)`).
