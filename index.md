@@ -2,7 +2,7 @@
 ## Table of Contents <a name="top"></a>
 - #### [Basic Syntax](#basic-syntax) 
 - #### [Order of Clauses](#clause-order)
-- #### [Operators](#operators)
+- #### [Operators](#operator)
 - #### [Working with Aggregate Functions](#aggregates)
 - #### [Joins and multiple tables](#joins)
 - #### [Basic Pattern Matching](#patterns)
@@ -10,7 +10,7 @@
 
 
 
-### Basic Syntax <a name="basic-syntax"></a> 
+## Basic Syntax <a name="basic-syntax"></a> 
 
 **Ex 1:**
 ``` SQL
@@ -38,7 +38,7 @@ LIMIT 5
 OFFSET 5;
 ```
 [back to top](#top)
-### Order of Clauses (for a basic query) <a name="clause-order"></a>
+## Order of Clauses (for a basic query) <a name="clause-order"></a>
 
 This is the general order of clauses for most basic SQL queries. Please note that there are other advanced clauses which are not covered here.
 1. `SELECT`
@@ -53,7 +53,8 @@ This is the general order of clauses for most basic SQL queries. Please note tha
 
 \* *Denotes a clause that is not always required in a query.*
 [back to top](#top)
-#### Operators <a name="operators"></a>
+
+## Operators <a name="operator"></a>
 ##### Comparison Operators
 **Equal to**: `=`
 **Not equal to**: `<>` or `!=`
@@ -78,11 +79,11 @@ This is the general order of clauses for most basic SQL queries. Please note tha
 - `/` - Divides two values
 [back to top](#top)
 
-### Working with Aggregate Functions <a name="aggregates"></a>
-##### Clauses to know:
+## Working with Aggregate Functions <a name="aggregates"></a>
+#### Clauses to know:
 - `GROUP BY` - Allows you to aggregate data in by a single value or group of values.
 - `HAVING` - Allows you to filter your query using the value of an aggregate function. Think of this as a `WHERE` clause for aggregate functions.
-##### Common aggregate functions:
+#### Common aggregate functions:
 - `COUNT(column)`: Counts how many rows are in a particular column (or table if you use '*' - e.g. `COUNT(*)`).
 - `MIN(column)`: Gives you the smallest value found for the given column.
 - `MAX(column)`: Gives you the largest value found for the given column.
@@ -156,8 +157,8 @@ GROUP BY
 HAVING COUNT(column3) > 1;
 ```
 [back to top](#top)
-### Joins and multiple tables <a name="joins"></a>
-##### Types of Joins & Code examples
+## Joins and multiple tables <a name="joins"></a>
+#### Types of Joins & Code examples
 
 **`INNER JOIN`**
 
@@ -213,7 +214,7 @@ FROM A
 FULL OUTER JOIN B
 ON A.column1=B.column1
 ```
-##### Syntax
+#### Syntax
 We typically use dot (`.`) notation when we join two or more tables in SQL. This is so that we don't confuse the SQL engine when two tables have columns with the same name. Here's the syntax:
 `table_name.column_name`
 **Ex:**
@@ -228,8 +229,8 @@ WHERE A.column1 LIKE 'COOP%'
 ```
 Another thing to keep in mind is that `JOIN` and `INNER JOIN` are the same thing in SQL. Clauses that are effectively the same but written differently are called synonyms. However, while `JOIN` and `INNER JOIN` do the same thing, we tend to prefer the more explicit `INNER JOIN` syntax. This makes your code more clear and easier to understand, which is important when you're working on a team!
 [back to top](#top)
-### Basic Pattern Matching <a name="patterns"></a>
-##### `LIKE` with the `%` Operator
+## Basic Pattern Matching <a name="patterns"></a>
+#### `LIKE` with the `%` Operator
 The `%` is known as a wildcard operator. This means that it can be used to match zero (think blank spaces) to many characters in a given string. Here are some examples of how we can use it to filter for text patterns in our data. 
 >*The following code:*
 >```SQL
@@ -254,7 +255,7 @@ Essentially, this filters for any text string that starts with the word *"COOP"*
 >- "COOP"
 >- "It's pronounced **'COOP'** not *'COOP'*"
 
-##### `LIKE` with the `_` Operator
+#### `LIKE` with the `_` Operator
 The `_` operator is also a wildcard operator, just like `%`. The only difference is that `_` only matches any single character.
 >*The following code:*
 >```SQL
@@ -271,7 +272,7 @@ The `_` operator is also a wildcard operator, just like `%`. The only difference
 
 [back to top](#top)
 
-### Resources - More Practice! <a name="resources"></a>
+## Resources - More Practice! <a name="resources"></a>
 - [SQL Bolt](https://sqlbolt.com/): The lessons here are a great introduction to SQL and you know the platform already!
 - [Mode](https://mode.com/sql-tutorial/): A comprehensive SQL tutorial from beginner all the way to advanced SQL. There's even a data analytics with SQL tutorial. This is a great resource to learn about SQL in depth and practice what you learn in their online database.
 - [StrataScratch](https://platform.stratascratch.com/coding): Practice coding questions geared toward data analysts and data scientists. You can solve coding problems used by real companies for technical interviews using PostgresSQL, Python, R, or MySQL. It's free to sign up!
