@@ -57,7 +57,7 @@ This is the general order of clauses for most basic SQL queries. Please note tha
 
 ## Operators <a name="operator"></a>
 
-##### Comparison Operators
+#### Comparison Operators
 - **Equal to**: `=`
 - **Not equal to**: `<>` or `!=`
 - **Greater than**: `>`
@@ -67,7 +67,7 @@ This is the general order of clauses for most basic SQL queries. Please note tha
 - **Match zero to many characters (for `LIKE` clause):** `%`
 - **Match any single character (for `LIKE` clause):** `_`
 
-##### Logical Operators
+#### Logical Operators
 - `AND` - Checks that two or more conditions are ALL true (e.g. `condition1 AND condition2`)
 - `OR` - Checks if any of two or more conditions are true (e.g. `condition1 OR condition2`)
 - `NOT` - Negates the logical operation that it is placed in front of (e.g. `NOT AND`)
@@ -75,7 +75,8 @@ This is the general order of clauses for most basic SQL queries. Please note tha
 - `LIKE` - Matches on similar rather than exact values (e.g. `column1 LIKE 'COOP%'`)
 - `BETWEEN` - Checks for values in a range (e.g. `column1 BETWEEN 1 AND 5` checks for a value between 1 and 5 in `column1`)
 - `IN` - Checks if a value is in a given set of values (e.g. `column1 IN (1,2,4,5)` checks if any of the values in `column1` are either 1, 2, 4 or 5)
-##### Arithmetic Operators
+
+#### Arithmetic Operators
 - `+` - Adds two values
 - `-` - Subtracts two values
 - `*` - Multiplies two values
