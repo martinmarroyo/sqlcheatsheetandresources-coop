@@ -49,7 +49,7 @@ This is the general order of clauses for most basic SQL queries. Please note tha
 6. `HAVING`*
 7. `ORDER BY`*
 8. `LIMIT`*
-9. ` OFFSET`*
+9. `OFFSET`*
 
 \* *Denotes a clause that is not always required in a query.*
 [back to top](#top)
