@@ -7,7 +7,8 @@
 - #### [Joins and multiple tables](#joins)
 - #### [Basic Pattern Matching](#patterns)
 - #### [Resources - More Practice!](#resources)
-</br>
+
+
 
 ### Basic Syntax <a name="basic-syntax"></a> 
 
