@@ -74,26 +74,26 @@ This is the general order of clauses for most basic SQL queries. Please note tha
 - **Match any single character (for `LIKE` clause):** `_`
 
 #### Logical Operators
-- `AND` - Checks that two or more conditions are ALL true (e.g. `condition1 AND condition2`)
-- `OR` - Checks if any of two or more conditions are true (e.g. `condition1 OR condition2`)
-- `NOT` - Negates the logical operation that it is placed in front of (e.g. `NOT AND`)
-- `IS NULL` - Checks if a value is NULL (meaning there is no data - e.g. `column1 IS NULL`)
-- `LIKE` - Matches on similar rather than exact values (e.g. `column1 LIKE 'COOP%'`)
-- `BETWEEN` - Checks for values in a range (e.g. `column1 BETWEEN 1 AND 5` checks for a value between 1 and 5 in `column1`)
-- `IN` - Checks if a value is in a given set of values (e.g. `column1 IN (1,2,4,5)` checks if any of the values in `column1` are either 1, 2, 4 or 5)
+- `AND`: Checks that two or more conditions are ALL true (e.g. `condition1 AND condition2`)
+- `OR`: Checks if any of two or more conditions are true (e.g. `condition1 OR condition2`)
+- `NOT`: Negates the logical operation that it is placed in front of (e.g. `NOT AND`)
+- `IS NULL`: Checks if a value is NULL (meaning there is no data - e.g. `column1 IS NULL`)
+- `LIKE`: Matches on similar rather than exact values (e.g. `column1 LIKE 'COOP%'`)
+- `BETWEEN`: Checks for values in a range (e.g. `column1 BETWEEN 1 AND 5` checks for a value between 1 and 5 in `column1`)
+- `IN`: Checks if a value is in a given set of values (e.g. `column1 IN (1,2,4,5)` checks if any of the values in `column1` are either 1, 2, 4 or 5)
 
 #### Arithmetic Operators
-- `+` - Adds two values
-- `-` - Subtracts two values
-- `*` - Multiplies two values
-- `/` - Divides two values
+- `+`: Adds two values
+- `-`: Subtracts two values
+- `*`: Multiplies two values
+- `/`: Divides two values
 
 [back to top](#top)
 
 ## Working with Aggregate Functions <a name="aggregates"></a>
 #### Clauses to know:
-- `GROUP BY` - Allows you to aggregate data in by a single value or group of values.
-- `HAVING` - Allows you to filter your query using the value of an aggregate function. Think of this as a `WHERE` clause for aggregate functions.
+- `GROUP BY`: Allows you to aggregate data in by a single value or group of values.
+- `HAVING`: Allows you to filter your query using the value of an aggregate function. Think of this as a `WHERE` clause for aggregate functions.
 #### Common aggregate functions:
 - `COUNT(column)`: Counts how many rows are in a particular column (or table if you use '*' - e.g. `COUNT(*)`).
 - `MIN(column)`: Gives you the smallest value found for the given column.
