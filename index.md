@@ -19,18 +19,24 @@ FROM table;
 ```
 **Ex 2:**
 ``` SQL
-SELECT column1, column2
+SELECT 
+    column1
+    ,column2
 FROM table;
 ```
 **Ex 3:**
 ``` SQL 
-SELECT DISTINCT column1, column2
+SELECT DISTINCT 
+    column1
+    ,column2
 FROM table
 WHERE condition1 = some_other_condition;
 ```
 **Ex 4:**
 ``` SQL
-SELECT column1, column2
+SELECT 
+    column1
+    ,column2
 FROM table
 WHERE column1 = some_condition
 ORDER BY column1 ASC, column2 DESC
@@ -174,8 +180,8 @@ HAVING COUNT(column3) > 1;
 **Ex:**
 ```SQL
 SELECT
-    A.column1,
-    B.column1
+    A.column1
+    ,B.column1
 FROM A
 INNER JOIN B
 ON A.column1=B.column1
@@ -187,8 +193,8 @@ ON A.column1=B.column1
 **Ex:**
 ```SQL
 SELECT
-    A.column1,
-    B.column1
+    A.column1
+    ,B.column1
 FROM A
 LEFT JOIN B
 ON A.column1=B.column1
@@ -201,8 +207,8 @@ ON A.column1=B.column1
 **Ex:**
 ```SQL
 SELECT
-    A.column1,
-    B.column1
+    A.column1
+    ,B.column1
 FROM A
 RIGHT JOIN B
 ON A.column1=B.column1
@@ -215,20 +221,23 @@ ON A.column1=B.column1
 **Ex:**
 ```SQL
 SELECT
-    A.column1,
-    B.column1
+    A.column1
+    ,B.column1
 FROM A
 FULL OUTER JOIN B
 ON A.column1=B.column1
 ```
 #### Syntax
+
 We typically use dot (`.`) notation when we join two or more tables in SQL. This is so that we don't confuse the SQL engine when two tables have columns with the same name. Here's the syntax:
 `table_name.column_name`
+
 **Ex:**
+
 ```SQL
 SELECT
-    A.column1,
-    B.column1
+    A.column1
+    ,B.column1
 FROM A
 INNER JOIN B
 ON A.column1=B.column1
