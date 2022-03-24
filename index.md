@@ -52,6 +52,7 @@ This is the general order of clauses for most basic SQL queries. Please note tha
 9. `OFFSET`*
 
 \* *Denotes a clause that is not always required in a query.*
+
 [back to top](#top)
 
 ## Operators <a name="operator"></a>
@@ -77,6 +78,7 @@ This is the general order of clauses for most basic SQL queries. Please note tha
 - `-` - Subtracts two values
 - `*` - Multiplies two values
 - `/` - Divides two values
+
 [back to top](#top)
 
 ## Working with Aggregate Functions <a name="aggregates"></a>
@@ -156,7 +158,9 @@ GROUP BY
     ,column2
 HAVING COUNT(column3) > 1;
 ```
+
 [back to top](#top)
+
 ## Joins and multiple tables <a name="joins"></a>
 #### Types of Joins & Code examples
 
