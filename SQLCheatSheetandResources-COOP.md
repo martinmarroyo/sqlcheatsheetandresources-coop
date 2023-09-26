@@ -52,6 +52,17 @@ This is the general order of clauses for most basic SQL queries. Please note tha
 
 \* *Denotes a clause that is not always required in a query.*
 [back to top](#top)
+
+### Order of Query Execution (for a basic query)
+
+1. `JOIN`/`FROM`
+2. `WHERE`
+3. `GROUP BY`/`HAVING`
+4. `SELECT`
+5. `ORDER BY`/`LIMIT`/`OFFSET`
+
+[back to top](#top)
+
 #### Operators <a name="operators"></a>
 ##### Comparison Operators
 **Equal to**: `=`
