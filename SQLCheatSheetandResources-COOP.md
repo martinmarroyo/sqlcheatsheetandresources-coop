@@ -2,6 +2,7 @@
 ## Table of Contents <a name="top"></a>
 - #### [Basic Syntax](#basic-syntax) 
 - #### [Order of Clauses](#clause-order)
+- #### [Order of Execution](#order-of-query-execution-for-a-basic-query)
 - #### [Operators](#operators)
 - #### [Working with Aggregate Functions](#aggregates)
 - #### [Joins and multiple tables](#joins)
